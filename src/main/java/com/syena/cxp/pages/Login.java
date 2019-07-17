@@ -26,7 +26,7 @@ public class Login extends Base {
 			loginPageLocators.go.click();
 			Thread.sleep(1000);
 			String title = driver.getTitle();
-			System.out.println(title);
+			System.out.println(title +"update");
 			if (title.equalsIgnoreCase("Superadmin - UserMapping")) {
 				test = true;
 			} else {
