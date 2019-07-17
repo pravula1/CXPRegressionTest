@@ -1,5 +1,7 @@
 package com.syena.cxp.base;
-
+/***
+ * written by  pravula
+ */
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -17,6 +19,7 @@ import com.syena.cxp.util.WebEventListener;
 public class Base 
 {
 	//Reference variables
+	
 	   public static WebDriver driver;
 	   public static EventFiringWebDriver e_driver;
 	   public static WebEventListener eventListener;
