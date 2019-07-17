@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Caterxpert Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.syena.cxp.extendreportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Caterxpert Regression Test Cases(failed)">
+    <classes>
+      <class name="com.syena.cxp.testcases.LoginPageTest">
+        <methods>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="validateLoginTest"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.LoginPageTest -->
+      <class name="com.syena.cxp.testcases.LogOutTest">
+        <methods>
+          <include name="validateLogoutTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.LogOutTest -->
+      <class name="com.syena.cxp.testcases.SalesPageTest">
+        <methods>
+          <include name="clickOnNewEventLinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.SalesPageTest -->
+      <class name="com.syena.cxp.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="clickOnSalesLinktest"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.HomePageTest -->
+      <class name="com.syena.cxp.testcases.NewEventTest">
+        <methods>
+          <include name="createEventTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.NewEventTest -->
+      <class name="com.syena.cxp.testcases.SuperadminPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="clickOnHomeIconTest"/>
+        </methods>
+      </class> <!-- com.syena.cxp.testcases.SuperadminPageTest -->
+    </classes>
+  </test> <!-- Caterxpert Regression Test Cases(failed) -->
+</suite> <!-- Failed suite [Caterxpert Test Automation Test Suite] -->
