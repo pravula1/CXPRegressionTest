@@ -28,13 +28,13 @@ public class LoginPageTest extends Base
 	@Test(priority = 1)
 	public void validateLoginTest() {
 		try {
-			
+		
 		String caterer = properties.getProperty("catererid");
 		System.out.println(caterer);
 		String userid = properties.getProperty("userid");
 		String password = properties.getProperty("password");
 		Assert.assertTrue(loginPage.login(caterer, userid, password));
-		
+                System.out.println("Done with the LOgin recent update in svn");
 		}
 	catch(Exception e)
 	{

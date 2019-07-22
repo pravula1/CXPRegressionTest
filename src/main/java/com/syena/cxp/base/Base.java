@@ -1,7 +1,5 @@
 package com.syena.cxp.base;
-/***
- * written by  pravula
- */
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,7 +17,6 @@ import com.syena.cxp.util.WebEventListener;
 public class Base 
 {
 	//Reference variables
-	
 	   public static WebDriver driver;
 	   public static EventFiringWebDriver e_driver;
 	   public static WebEventListener eventListener;
@@ -51,15 +48,16 @@ public class Base
 	  public static void intilization() 
 	  {
 		  String browsername = properties.getProperty("browser");
+		  System.out.println("runnied through the git hud");
 	     if(browsername.equalsIgnoreCase("chrome"))
 	    {   
-		  System.setProperty("webdriver.chrome.driver","D:\\Automation\\CXPRegression\\Driver\\chromedriver.exe" );
+		  System.setProperty("webdriver.chrome.driver",".\\Driver\\chromedriver.exe" );
 		  //intilization of driver variable and used in child class 
 		   driver= new ChromeDriver();
 	    }
 	    else if (browsername.equalsIgnoreCase("firefox"))
 		{
-		  System.setProperty("webdriver.gecko.driver", "D:\\Automation\\CXPRegression\\drivers\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
 		  driver = new FirefoxDriver();
 		  
 	    }
